@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant lada</title>
+    <link href="Favicon@2x.png" rel="icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <style>
+        nav {
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: antiquewhite;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+
+        }
+
+        .banner {
+            background-color: rgb(7, 7, 7);
+            height: 250px;
+            background-image: url(beautiful-black-couple-love-having-romantic-dinner-restaurant-beautiful-black-couple-having-romantic-dinner-restaurant-172366885.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+
+
+        .banner h2 {
+
+            font-size: 5vw;
+            margin: 20px 0;
+            text-align: center;
+
+        }
+
+        .banner p {
+            font-size: 1.4vw;
+            margin: 10 0;
+        }
+
+        .banner button {
+
+            padding: 10px;
+            background-color: yellow;
+            font-weight: bold;
+
+
+        }
+
+        .banner button:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        . .service {
+            display: flex;
+            column-gap: 20px;
+            padding: 40px 10%;
+
+        }
+
+        .service section {
+            height: 400px;
+            background-color: black;
+            flex: 1;
+
+        }
+
+        .about {
+
+            display: flex;
+            padding: 40px 10%;
+            column-gap: 5%;
+
+        }
+
+        .about-img {
+
+
+            background-color: black;
+            height: 500px;
+        }
+
+        .reserve {
+            display: flex;
+        }
+
+        .reserve-img {
+            background-image: url(beautiful-black-couple-love-having-romantic-dinner-restaurant-beautiful-black-couple-having-romantic-dinner-restaurant-172366885.webp);
+            flex: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .reserve-form {
+            flex: 1;
+            padding: 40px 4%;
+            background-color: blue;
+
+
+        }
+
+        .reserve-form h5 {
+            color: yellow;
+            font-family: nt-family: 'Luckiest Guy', cursive
+        }
+
+        .reserve-form h3 {
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px 0 15 0px;
+        }
+
+        .reserve-form input {
+            height: 35px;
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+
+        .reserve-form div {
+            display: flex;
+            column-gap: 2%;
+        }
+
+        .reserve-form textarea {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .service {
+            display: flex;
+            column-gap: 20px;
+            padding: 40;
+            10;
+        }
+
+        .service section {
+            background-color: black;
+            flex: 1;
+        }
+
+        .button {
+            height: 50px;
+            width: 50px;
+            color: orangered;
+            border-radius: 5%;
+            background: -moz-linear-gradient(orangered);
+            font-size: 18;
+
+        }
+
+        . button {
+            height: 50px;
+            margin: 45px 0;
+        }
+
+        .contact {
+            display: flex;
+            column-gap: 3%;
+            padding: 5%;
+          }
+
+
+
+        .contact section {
+            background-color: black;
+            flex: 1;
+            padding: 5%;
+            color: white;
+            border-radius: 10%;
+            text-align: center;
+        }
+
+        .reserve {
+            display: flex;
+        }
+
+        .reserve-img {
+            background-color: black;
+            background-image: url(black-couple-on-a-date.jpg) flex: 1;
+
+        }
+
+        .reserve-form {
+            flex: 1;
+            padding: 40px 4%;
+            background-color: black;
+        }
+
+        .reserve-form h5 {
+            color: yellow;
+            font-family: nt-family: 'Luckiest Guy', cursive
+        }
+
+        .reserve-form h3 {
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 5px 0 15 0px;
+        }
+
+        .reserve-form input {
+            height: 35;
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .reserve-form div {
+            display: flex;
+            column-gap: 2%;
+        }
+
+        .reserve-form textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        . button {
+            height: 50px;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .Newsletter{
+            display: flex;
+            column-gap: 2%;
+            background-color: #ffff;
+            padding: 2px;
+        }
+
+        .Newsletter input[type="submit"]{
+            background-color: orangered;
+            font-size: x-small;
+            position: relative;
+
+        }
+
+        .Newsletter input[type="email"]{
+            border: none;
+            flex: 3;
+            outline: none;
+        }
+
+         .button{
+            height: 100px;
+            width: 100px;
+            color: orangered;
+            border-radius: 5%;
+            background: -moz-linear-gradient(orangered);
+            font-size: 18;
+        }
+
+            .button{
+                background-color: goldenrod;
+                font-size: larger;
+                width: 100%;
+                height: 100px;
+            }
+
+            .dinn{
+                display: flex;
+                align-items: center;
+                border: none;
+                padding: 3%;
+                justify-content: center;
+            }
+
+            .dove > ul{
+                display: flex;
+                column-gap: 2%;
+            
+            
+                
+            }
+
+            footer{
+                padding: 0;
+                margin: 0;
+                font-size: 25px;
+                font-weight: 35;
+                background-color: black;
+                color: bisque;
+            }
+
+            
+
+            
+            
+    </style>
+</head>
+
+<body>
+    <header>
+        <center>
+
+            <a href="index.html"><img src="Lada logo@2x.png" alt="logo" height="100px"></a>
+        </center>
+    </header>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="service.html">
+                <li>service</li>
+            </a>
+            <a href="menu.html">
+                <li>menu</li>
+            </a>
+            <a href="blog.html">
+                <li>blog</li>
+            </a>
+            <a href="reservation.html">
+                <li>reservation</li>
+            </a>
+
+        </ul>
+    </nav>
+    <main class="banner">
+        <div>
+            <h2>resevation</h2>
+
+
+        </div>
+    </main>
+    <main class="contact">
+        <section>30 oluwatosin street ajasa command ipaja lagos</section>
+        <section>Phone no</section>
+        <section>Email</section>
+
+
+
+
+
+
+    </main>
+
+</body>
+
+<main class="reserve">
+    <section class="reserve-img"></section>
+    <section class="reserve-form">
+        <form>
+            <h5>reservation</h5>
+            <h3>Book a table online</h3>
+            <div>
+                <input type="text">
+                <input type="email">
+            </div>
+            <div>
+                <input type="datetime-local" date & time>
+
+                <select>
+                    <option>no of people<br>
+                        1 person</option>
+                    <option>3people</option>
+                    <option>4people</option>
+                    <option>5 people</option>
+                </select>
+            </div>
+
+            <textarea rows="10">special request</textarea>
+            <input type="submit" value="Book NOW" style="background-color: hwb(39 11% 7%);">
+
+        </form>
+    </section>
+</main>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63408.63480201705!2d3.297919250898405!3d6.6419954918075135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s30%20oluwatosin%20street%20ajasa%20command%20lagos!5e0!3m2!1sen!2sng!4v1707134289718!5m2!1sen!2sng"
+    width="3000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<footer style="padding:5%; background-color: blue;" >
+    <section style="display:flex; column-gap:5%;">
+        <aside>
+            <div style="list-style: square ; flex: 1;">
+                <h3>company</h3>
+                <ul>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>reservation</li>
+                    <li>Privacy policy</li>
+                    <li>Terms & condition</li>
+            </div>
+            </ul>
+
+        </aside>
+        <aside>
+            <div style="list-style-type: style none;flex: 1;">
+                <h3 class="icon">Contact</h3>
+
+                <li>30 oluwatosin street ajasa <command ipaja lagos</li>
+                <li> +2349065178076</li>
+                <li>info@eleniyan.com</li>
+                <i class="bi bi-facebook"></i>
+        </aside>
+        </div>
+
+        <aside>
+            <div style="flex:1;">
+                <h3>Opening</h3>
+                <h5><p>Monday-sunday</p></h5>
+                        <h6>09AM-09PM</h6>
+                        <h5>Sunday:</h5>
+                        <h6>10AM-08PM</h6>
+            </div>
+        </aside>
+        <aside>
+            <h3>Newsletter</h3>
+            <p>dolor amet sit justo amet elitr clita<br>
+                ipsum elitr est.</p>
+            <div>
+                <input type="email" placeholder="your email">
+                <input type="button" value="SIGN UP">
+            </div>
+        </aside>
+              
+    </section>
+    <hr>
+    <section>
+        
+        <aside class="dinn">
+            
+            <h5 style="flex: 3; margin: 0;">  Your site Name,All Right Reserved.Designed by HTML codex</h5>
+        </aside>
+
+        <aside class="dove">
+            <ul style="flex: 1; margin: 0px; list-style: none;">
+             <li>Home</li>
+             <li>Cookies</li>
+             <li>Help</li>
+             <li>FQAs</li>
+              </ul>
+             
+          </aside>   
+             
+        
+    </section>
+
+
+</footer>
+
+<footer>
+   <center> &copy 2024 All right Reserved;</center>
+</footer>
+
+
+
+
+</html>

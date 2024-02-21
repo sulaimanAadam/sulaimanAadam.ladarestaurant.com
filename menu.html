@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant lada</title>
+    <link href="Favicon@2x.png" rel="icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6d9769bbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        nav {
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: antiquewhite;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+
+        }
+
+        .banner {
+            background-color: blue;
+            height: 250px;
+            background-image: url(banner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        nav a:hover{
+            color: yellow;
+        }
+
+        .banner div{
+            
+            width: 40%;
+            position: absolute;
+            top: 25%;
+            right: 5%;
+
+        }
+
+        .banner h2{
+
+            font-size: 5vw;
+            margin: 20px 0;
+
+        }
+
+        .banner p{
+            font-size: 1.4vw;
+            margin: 10 0;
+        }
+
+        .banner button{
+
+            padding: 10px;
+            background-color: yellow;
+            font-weight: bold;
+
+
+        }
+
+        .banner button:hover{
+            background-color: red;
+            color: white;
+cursor: pointer;
+        }
+
+        .
+
+        .service {
+            display: flex;
+            column-gap: 20px;
+            padding: 40px 10%;
+
+        }
+
+        .service section {
+            height: 400px;
+            background-color: black;
+            flex: 1;
+
+        }
+
+        .about {
+
+            display: flex;
+            padding: 40px 10%;
+            column-gap: 5%;
+
+        }
+
+        .about-img {
+
+
+            background-color: black;
+            height: 500px;
+        }
+
+        .reserve {
+            display: flex;
+        }
+
+        .reserve-img {
+            background-image: url(beautiful-black-couple-love-having-romantic-dinner-restaurant-beautiful-black-couple-having-romantic-dinner-restaurant-172366885.webp);
+            flex: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .reserve-form {
+            flex: 1;
+            padding: 40px 4%;
+            background-color: blue;
+
+
+        }
+
+        .reserve-form h5 {
+            color: yellow;
+            font-family: nt-family: 'Luckiest Guy', cursive
+        }
+
+        .reserve-form h3 {
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px 0 15 0px;
+        }
+
+        .reserve-form input {
+            height: 35px;
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+
+        .reserve-form div {
+            display: flex;
+            column-gap: 2%;
+        }
+
+        .reserve-form textarea {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .service {
+            display: flex;
+            column-gap: 20px;
+            padding: 40;
+            10;
+        }
+
+        .service section {
+            background-color: black;
+            flex: 1;
+        }
+
+        .button {
+            height: 50px;
+            width: 50px;
+            color: orangered;
+            border-radius: 5%;
+            background: -moz-linear-gradient(orangered);
+            font-size: 18;
+
+        }
+
+        . button {
+            height: 50px;
+            margin: 45px 0;
+        }
+
+        .footer{
+            background-color: blueviolet;
+            display: flex;
+            
+        }
+
+        .Menu{
+            padding: 5%;
+            
+        }
+        .Menu-1{
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: nt-family: 'Luckiest Guy', cursive
+
+            
+        }
+
+        .Menu-2{
+            display: flex;
+        
+            justify-content: center;
+            
+        }
+
+        .Menu-2 aside{
+            display:flex ;
+            column-gap: 7%;
+            border-bottom: 1px solid orangered;
+            padding: 0 20px;
+
+        }
+
+        
+        .Menu-2 aside:hover{
+            
+            border-bottom: 2px solid orangered;
+            
+
+        }
+
+        .Menu-2 i{
+            font-size: 4em;
+            color: orangered;
+
+        }
+
+        .Menu-2 p{
+            font-size: 2em;
+            align-items: center;
+        }
+
+        .Menu-3{
+            display: flex;
+           
+          padding: 5%;
+          column-gap: 5%;
+            
+        }
+
+        
+
+        
+            
+        
+
+    
+
+        
+        
+        .food{ 
+            display: flex;
+            column-gap: 2%;
+            margin: 10px;
+            padding: 5%;
+            justify-content: space-between;
+        }
+
+
+            
+        
+        .Menu-3 aside{
+            flex:1
+        }
+  
+            .food > div{
+                flex: 1;
+            }
+
+            .food article{
+                flex: 6;
+                
+            }
+
+            .food span{
+                margin: 2%;
+                padding: 5%;
+            }
+
+            .Menu-3 img{
+                display: flex;
+                width: 100px;
+                height: 100px;
+                
+            }
+
+            
+        .footer{
+            background-color: blue;
+            color: white;
+            padding: 3%;
+            height: 10px;
+            word-spacing: 3px;
+            font-size: 20px;
+            justify-content: center; 
+        }
+        
+            
+
+                
+
+            
+
+            
+          
+                
+
+            
+           
+            
+
+           
+            
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <center>
+
+            <a href="index.html"><img src="Lada logo@2x.png" alt="logo" height="100px"></a>
+        </center>
+    </header>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="service.html">
+                <li>service</li>
+            </a>
+            <a href="menu.html">
+                <li>menu</li>
+            </a>
+            <a href="blog.html">
+                <li>blog</li>
+            </a>
+            <a href="reservation.html">
+                <li>reservation</li>
+            </a>
+
+        </ul>
+    </nav>
+   <main class="banner">
+
+    <h2>Menu</h2>
+    </main>
+
+
+
+    <main class="Menu">
+    <section class="Menu-1">
+   Food menu
+ <h3>  most popular items</h3>
+
+    </section>
+
+    <section class="Menu-2">
+        <aside>
+            <div><i class="fa-solid fa-mug-hot"></i></div>
+            <div>
+                <p>popular <br> <strong>breakfast</strong></p> 
+            </div>
+        </aside>
+      
+        <aside>
+            <div><i class="fa-solid fa-burger"></i></div>
+            <div>
+                <p>special <br> <strong>Lunch</strong></p> 
+            </div>
+        </aside>
+
+        <aside>
+            <div><i class="fa-solid fa-utensils"></i></div>
+            <div>
+              <p>Lovely<br><strong>dinner</strong></p> 
+            </div>
+        </aside>
+        </section>
+        <section class="menu-3">
+            <aside>
+              <div class="food">
+                    <img src="jollof-rice--dish-.jpg" width="100px">
+                    <article>
+                    <div><span>Rice and Chicken </span> <span>2000</span></div>
+            
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            </article>  
+                </div>
+
+                <div>
+                    <img src="jollof-rice--dish-.jpg" width="100px">
+                    <article>
+                    <div><span>Rice and Chicken </span> <span>2000</span></div>
+            
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            </article>  
+                </div>
+
+                <div>
+                    <img src="jollof-rice--dish-.jpg" width="100px">
+                    <article>
+                    <div><span>Rice and Chicken </span> <span>2000</span></div>
+                
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>  
+                </div>
+
+                <div>
+                    <img src="jollof-rice--dish-.jpg" width="100px">
+                    <article>
+                    <div><span>Rice and Chicken </span> <span>2000</span></div>
+                
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            </article>  
+                </div>
+
+                <div>
+                    <img src="jollof-rice--dish-.jpg" width="100px">
+                    <article>
+                    <div><span>Rice and Chicken </span> <span>2000</span></div>
+                
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            </article>  
+                </div>
+
+                <div>
+                    <img src="jollof-rice--dish-.jpg" width="100px">
+                    <article>
+                    <div><span>Rice and Chicken </span> <span>2000</span></div>
+
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                </div>
+
+               <aside> 
+            </article>  
+                </div>
+
+                <div>
+                    <img src="jollof-rice--dish-.jpg" width="100px">
+                    <article>
+                    <div><span>Rice and Chicken </span> <span>2000</span></div>
+                
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            </article>  
+                </div>
+            </aside>
+               
+            </aside>
+
+
+                
+                
+              </div>  
+            </aside>
+
+            <section>
+                <div>
+                    <img src="jollof-rice--dish-.jpg" width="100px">
+                    <article>
+                    <div><span>Rice and Chicken </span> <span>2000</span></div>
+                
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            </article>  
+                </div>
+
+            </section>
+          
+           
+         
+        
+            
+        </section>
+            
+                
+                
+            
+           
+        
+
+    
+    <section class="menu 4">
+
+    </section>
+
+    </main>
+    
+   
+<footer>
+   <center> &copy; 2024 All right Reserved</center>
+</footer>
+
+    
+    </body>
+
+    </html>
